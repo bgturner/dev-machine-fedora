@@ -1,0 +1,10 @@
+---
+- name: Install ZSH
+  dnf: name=zsh state=present
+
+- name: Clone Oh-my-zsh
+  git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest="/home/{{ user }}/.oh-my-zsh"
+
+- name: Set ZSH as default Shell
+  user: name="{{ user }}" shell=/usr/bin/zsh
+

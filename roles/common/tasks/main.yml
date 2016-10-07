@@ -1,0 +1,10 @@
+---
+- name: Install common core packages
+  dnf: name={{ item }} state=present
+  with_items:
+    - libselinux-python
+    - git
+    - tmux
+    - vim
+    - gnome-tweak-tool
+
