@@ -3,6 +3,7 @@
   dnf: name={{ item }} state=present
   with_items:
     - libselinux-python
+    - yum
     - git
     - tmux
     - vim
