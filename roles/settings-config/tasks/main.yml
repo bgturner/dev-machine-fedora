@@ -1,0 +1,5 @@
+---
+- name: Executing configure-settings.sh script
+  shell: '{{ dev_machine_local_path }}/configure-settings.sh'
+  become: no
+

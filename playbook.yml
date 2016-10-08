@@ -12,4 +12,5 @@
     - { role: dotfiles }
     - { role: php }
     - { role: composer }
+    - { role: settings-config }
 

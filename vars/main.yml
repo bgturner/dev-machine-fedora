@@ -1,5 +1,7 @@
 user: benjamin
 
+dev_machine_local_path: ~/.dev-machine
+
 dotfiles_repo: https://github.com/bgturner/dot-files.git
 dotfiles_repo_local_destination: ~/.dot-files
 dotfiles_files:
