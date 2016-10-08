@@ -9,3 +9,21 @@
     - vim
     - gnome-tweak-tool
 
+- name: Install Graphic Design Packages
+  dnf: name={{ item }} state=present
+  with_items:
+    - shutter
+    - inkscape
+    - gpick
+    - gimp
+    - gimp-lensfun
+    - gimp-save-for-web
+    - gimpfx-foundry
+    - gimp-elsamuko
+
+- name: Install Productivity Packages
+  dnf: name={{ item }} state=present
+  with_items:
+    - chromium
+    - thunderbird
+
