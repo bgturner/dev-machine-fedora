@@ -5,6 +5,7 @@
 This is a collection of Ansible playbooks to provision a Fedora laptop for development. Here are the main steps to get started:
 
 * Clone this repo
+* Install any updates to existing software
 * Install Ansible and dependencies
 * Install 'vendor' roles from Ansible Galaxy
 * Run Ansible to provision the laptop
@@ -12,7 +13,8 @@ This is a collection of Ansible playbooks to provision a Fedora laptop for devel
 So from a vanilla install of Fedora, the above would look like:
 
 ```
-git clone https://github.com/bgturner/dev-machine-fedora ~/.dev-machine-fedora && cd ~/.dev-machine-fedora
+git clone https://github.com/bgturner/dev-machine-fedora ~/.dev-machine && cd ~/.dev-machine
+sudo dnf upgrade
 sudo dnf install ansible python2-dnf yum
 ansible-galaxy install -r ./requirements.yml
 ansible-playbook -i inventory/local -s -K playbook.yml
@@ -21,7 +23,7 @@ ansible-playbook -i inventory/local -s -K playbook.yml
 or just use this repo's `bootstrap.sh` file:
 
 ```
-git clone https://github.com/bgturner/dev-machine-fedora ~/.dev-machine-fedora && cd ~/.dev-machine-fedora
+git clone https://github.com/bgturner/dev-machine-fedora ~/.dev-machine && cd ~/.dev-machine
 ./bootstrap.sh
 ```
 

@@ -5,6 +5,10 @@
 #
 
 echo ""
+echo "Updating existing packages..."
+sudo dnf upgrade
+
+echo ""
 echo "Installing base packages to work with Ansible on Fedora..."
 sudo dnf install ansible python2-dnf yum
 
