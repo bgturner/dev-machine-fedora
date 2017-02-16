@@ -10,4 +10,5 @@ dotfiles_files:
   - .tmux.conf
   - .vimrc
   - .zshrc
+  - .bash_aliases
 
