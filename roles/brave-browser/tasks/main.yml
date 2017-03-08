@@ -1,9 +1,6 @@
 ---
 - name: Add Brave Browser RPM Repo
-  dnf:
-    name: brave
-    enablerepo: https://s3-us-west-2.amazonaws.com/brave-rpm-release/x86_64/
-    state: present
+  command: sudo dnf config-manager --add-repo https://s3-us-west-2.amazonaws.com/brave-rpm-release/x86_64/
 
 - name: Import Brave Browser release keys
   rpm_key:
