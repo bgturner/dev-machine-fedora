@@ -1,0 +1,12 @@
+galaxy_info:
+  author: bgturner
+  description: Installs Brave Browser
+  company: 'Passions Play'
+  license: "license (BSD, MIT)"
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: Fedora
+    versions:
+    - 25
+
