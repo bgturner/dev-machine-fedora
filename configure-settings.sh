@@ -24,3 +24,13 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'gnome-terminal'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Super>t'
 
+# Adjust title bar button settings
+#
+# Note: the colon indicates where the window title will be. To have the 
+# buttons to the right of the title, place the colon before the button 
+# definition:
+#
+#		':close,minimize,maximize'
+#
+gsettings set org.gnome.desktop.wm.preferences button-layout 'close:'
+
