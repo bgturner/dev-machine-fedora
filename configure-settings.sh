@@ -9,6 +9,13 @@ profile=${profile:1:-1} # remove leading and trailing single quotes
 # Update Terminal Color scheme.
 gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" background-color '#1c1c1c'
 
+# Disable menu bar in gnome-terminal
+#
+# Note: since this is a global preference, we don't need to target a 
+# specific profile.
+#
+gsettings set "org.gnome.Terminal.Legacy.Settings" default-show-menubar false
+
 # Swap capslock with esc.
 gsettings set org.gnome.desktop.input-sources xkb-options "['caps:swapescape']"
 
